@@ -7,20 +7,7 @@ Enter same passphrase again:
 Your identification has been saved in /root/.ssh/id_rsa.
 Your public key has been saved in /root/.ssh/id_rsa.pub.
 The key fingerprint is:
-SHA256:V9plgDg3vUa8aK2Rbxwl22jO3uhYcD/GZvaur7WbfoA root@joepoc-k8s-master02
-The key's randomart image is:
-+---[RSA 2048]----+
-|         . +.    |
-|        o + =..  |
-|         o *.Oo  |
-|          =+Xo.  |
-|        S.+Xoo   |
-|         ..oEo.  |
-|           o.oO..|
-|           oo=.++|
-|          ... +X*|
-+----[SHA256]-----+
-root@joepoc-k8s-master02:~#
+SHA256:V9plgDg
 
 # rename pub key
 root@joepoc-k8s-master02:~# cd ~
