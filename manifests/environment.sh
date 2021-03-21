@@ -18,6 +18,7 @@ export ETCD_NODES="joepoc-k8s-master01=https://10.2.0.6:2380,joepoc-k8s-master02
 # kube-apiserver 的反向代理(kube-nginx)地址端口
 export KUBE_APISERVER="https://127.0.0.1:8443"
 
+# user apiserver as service account issuer 
 export SERVICE_ACCOUNT_ISSUER="https://127.0.0.1:6443/auth/realms/master/.well-known/openid-configuration"
 
 # 节点间互联网络接口名称
