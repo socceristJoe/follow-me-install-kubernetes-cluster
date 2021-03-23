@@ -3,11 +3,23 @@
 # 生成 EncryptionConfig 所需的加密 key
 export ENCRYPTION_KEY=$(head -c 32 /dev/urandom | base64)
 
-# 集群各机器 IP 数组
+# 集群各master机器 IP 数组
 export NODE_IPS=(10.2.0.6 10.2.0.7 10.2.0.8)
 
-# 集群各 IP 对应的主机名数组
+# 集群各worker机器 IP 数组
+export NODE_WORKER_IPS=(10.2.0.9 10.2.0.10)
+
+# 集群所有机器 IP 数组
+export NODE_ALL_IPS=(10.2.0.6 10.2.0.7 10.2.0.8 10.2.0.9 10.2.0.10)
+
+# 集群各 IP 对应的master主机名数组
 export NODE_NAMES=(joepoc-k8s-master01 joepoc-k8s-master02 joepoc-k8s-master03)
+
+# 集群各 IP 对应的worker主机名数组
+export NODE_WORKER_NAMES=(joepoc-k8s-worker01 joepoc-k8s-worker02)
+
+# 集群各 IP 对应的主机名数组
+export NODE_ALL_NAMES=(joepoc-k8s-master01 joepoc-k8s-master02 joepoc-k8s-master03 joepoc-k8s-worker01 joepoc-k8s-worker02)
 
 # etcd 集群服务地址列表
 export ETCD_ENDPOINTS="https://10.2.0.6:2379,https://10.2.0.7:2379,https://10.2.0.8:2379"
